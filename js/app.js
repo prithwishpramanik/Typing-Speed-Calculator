@@ -1,6 +1,16 @@
+
+
 var timeleft = 6;
 
 document.getElementById("button").addEventListener("click", function (e){
+    let name = document.getElementById("fname").value;
+    let age = document.getElementById("age").value;
+    let gender=document.querySelector('input[name="gender"]:checked').value;
+
+
+
+    var form = document.getElementById("form");
+    var msg = document.getElementById("msg");
     var x = document.getElementById("exampleFormControlTextarea1");
     var y = document.getElementById("count");
     var r = document.getElementById("result");
@@ -11,6 +21,9 @@ document.getElementById("button").addEventListener("click", function (e){
         x.style.display = "block";
         y.style.display = "block";
         z.style.display = "none";
+        form.style.display = "none";
+        msg.style.display = "none";
+
     }
 
     var downloadTimer = setInterval(function(){
@@ -20,6 +33,11 @@ document.getElementById("button").addEventListener("click", function (e){
             x.style.display = "none";
             r.style.display = "block";
             g.style.display = "block"
+            document.getElementById("Name").innerHTML=name;
+            document.getElementById("Age").innerHTML=age;
+            document.getElementById("Gender").innerHTML=gender;
+
+
 
         } else {
             document.getElementById("count").innerHTML = timeleft + " seconds remaining";
@@ -66,9 +84,12 @@ document.getElementById("button").addEventListener("click", function (e){
 
     }, 1000)
 
-    //document.getElementById("button").style.display="block";
+
 
 
 
 })
+
+//document.getElementById("button").innerText="block";
+
 

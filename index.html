@@ -7,31 +7,44 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <title>Typing Speed Calculator</title>
 </head>
 <body>
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Navbar</span>
+        <span class="navbar-brand mb-0 h1">Typing Speed Calculator</span>
     </div>
 </nav>
 
     <div class="container">
 
-            <div id="textbox" class="d-grid gap-2 col-8 mx-auto">
+
+        <div id="textbox" class="d-grid gap-2 col-8 mx-auto">
                 <textarea  class="form-control" id="exampleFormControlTextarea1" style="display:none"  rows="3" placeholder="TYPE HERE"></textarea>
             </div>
-            <div class="d-grid gap-2 col-3 mx-auto mt-3">
-                <button type="button" id="button" class="btn btn-warning"><b>Click To Start Test</b></button>
 
-            </div>
+        <form id="form" style="display:block">
+            <label for="fname">Name:</label><br>
+            <input  class="form-label" type="text" id="fname" name="fname" placeholder="John" style="width: 74%"><br>
+            <label for="age">AGE:</label><br>
+            <input type="number" id="age" name="lname" placeholder="25" style="width: 74%"><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </form>
+
+        <div class="d-grid gap-2 col-3 mx-auto mt-3">
+            <button type="button" id="button" class="btn btn-warning"><b>Click To Start Test</b></button>
+        </div>
+        <div id="msg" style="text-align: center;font-weight: bolder;display:block" class="mt-4"><p><b>*ENTER DETAILS TO START</b></p></div>
 
 
-
-
-
-            <div id="count" class="row" style="display:none">
+        <div id="count" class="row" style="display:none">
                 <div class="col-2">
                     <div id="timer" class="p-3 border bg-light"></div>
                 </div>
@@ -50,15 +63,15 @@
     <div class="row gy-5">
         <div class="col-6">
             <div class="p-3 border bg-light">
-               <b>Your Name:<block></block></b> </br>
-               <b>Your Age:<block></block></b> </br>
-                <b>Your Gender:<block></block></b></br>
+               <b>Your Name: <block id="Name" class="text-success"></block></b></br>
+               <b>Your Age: <block id="Age" class="text-info"></block></b> </br>
+                <b>Your Gender: <block id="Gender" class="text-warning"></block></b></br>
 
             </div>
         </div>
         <div class="col-6">
             <div class="p-3 border bg-light">
-                <div id="result" class="p-3 border bg-light" style="display:none">Number Of Words/second: 0</div>
+                <div id="result" class="p-3 border bg-light" style="display:none">Number Of Words/Minute: 0</div>
             </div>
         </div>
         <div class="col-12">
