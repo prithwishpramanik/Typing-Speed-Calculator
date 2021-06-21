@@ -1,6 +1,6 @@
 
 
-var timeleft = 6;
+var timeleft = 60;
 
 document.getElementById("button").addEventListener("click", function (e){
     let name = document.getElementById("fname").value;
