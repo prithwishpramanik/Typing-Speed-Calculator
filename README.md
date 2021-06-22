@@ -25,8 +25,13 @@
 - 70-80 words:your progress will be 80%.
 - 80-90 words:your progress will be 90%.
 - greater then 90 words:your progress will be 10%.
-# IMAGES OF THE PROJECT🖼
-# FIND LIVE PROJECT BELOW👇
+<br>
+# Find glimpse of the peoject 🖼
+<img src="Screenshot (294).png">
+<img src="Screenshot (295).png">
+<img src="Screenshot (296).png">
+<br>
+# Find live project below👇
 https://prithwishpramanik.github.io/Typing-Speed-Calculator/
 
 
